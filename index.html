@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Looquee Support</title>
+  <title>Looquee — Support &amp; About</title>
 
   <style>
     body {
@@ -52,9 +52,16 @@
       color: #51607d;
     }
 
+    .cta-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
     .button {
       display: inline-block;
-      margin-top: 28px;
       padding: 15px 24px;
       border-radius: 999px;
       background: #2f6bff;
@@ -64,9 +71,41 @@
       transition: 0.2s ease;
     }
 
+    .button.secondary {
+      background: white;
+      color: #2f6bff;
+      border: 1px solid #d7e3ff;
+    }
+
     .button:hover {
       transform: translateY(-1px);
       opacity: 0.95;
+    }
+
+    .badge-wrap {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .badge-wrap img {
+      filter: drop-shadow(0 6px 16px rgba(64, 112, 255, 0.18));
+    }
+
+    .section-heading {
+      text-align: center;
+      margin: 64px 0 8px;
+    }
+
+    .section-heading h2 {
+      font-size: 28px;
+      margin: 0 0 10px;
+    }
+
+    .section-heading p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #51607d;
     }
 
     .card {
@@ -103,11 +142,77 @@
       margin-top: 24px;
     }
 
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+      margin-top: 8px;
+    }
+
+    .feature-item {
+      background: white;
+      border-radius: 20px;
+      padding: 24px;
+      border: 1px solid #edf1f7;
+      box-shadow: 0 8px 24px rgba(25, 40, 80, 0.05);
+    }
+
+    .feature-item .icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .feature-item h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      color: #172033;
+    }
+
+    .feature-item p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .sources-card {
+      text-align: center;
+    }
+
+    .sources-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .source-pill {
+      background: #eef4ff;
+      color: #2f6bff;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 8px 14px;
+      border-radius: 999px;
+    }
+
     .footer {
       text-align: center;
       margin-top: 44px;
       color: #7c879d;
       font-size: 14px;
+    }
+
+    .disclaimer {
+      font-size: 13px;
+      color: #9aa4b8;
+      max-width: 760px;
+      margin: 18px auto 0;
+      line-height: 1.6;
+    }
+
+    .legal-links {
+      margin-top: 14px;
+      font-size: 13px;
     }
 
     strong {
@@ -135,27 +240,120 @@
   <main class="container">
 
     <section class="hero">
-      <div class="tag">Looquee Support</div>
+      <div class="tag">Copilot for College Applications</div>
 
-      <h1>Your college journey should feel clearer, not heavier.</h1>
+      <h1>Own your college application journey.</h1>
 
       <p class="subtitle">
-        Looquee helps students explore colleges, organize applications,
-        understand costs, find scholarships, and get AI-powered guidance
-        throughout the application process.
+        Looquee's AI provides personalized matches, magical writing tools,
+        counselor-grade strategies, and organized application workflows —
+        all in one app, built on trusted university data that actually
+        understands your profile.
       </p>
 
-      <a class="button" href="mailto:looquee.dev@gmail.com">
-        Contact Support
-      </a>
+      <div class="cta-row">
+        <a class="button" href="https://apps.apple.com/us/app/looquee/id6766953133" target="_blank" rel="noopener noreferrer">
+          Get Looquee on the App Store
+        </a>
+        <a class="button secondary" href="mailto:looquee.dev@gmail.com">
+          Contact Support
+        </a>
+      </div>
+
+      <div class="badge-wrap">
+        <a href="https://www.producthunt.com/products/looquee?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-looquee" target="_blank" rel="noopener noreferrer">
+          <img alt="looquee - Copilot for college applications | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1163590&theme=light&t=1781707904214" />
+        </a>
+      </div>
     </section>
+
+    <div class="section-heading">
+      <h2>What you can do with Looquee</h2>
+      <p>Instead of starting from scratch every time, Looquee learns from your GPA, interests, extracurriculars, awards, resumes, recommendation letters, essays, and goals.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <span class="icon">🎯</span>
+        <h3>Personalized college matches</h3>
+        <p>AI compares your academic profile, interests, and goals with university data to recommend schools that fit you best.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">💰</span>
+        <h3>Scholarships that fit you</h3>
+        <p>AI reviews your profile and builds a personalized scholarship strategy to help you apply smarter.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">🧭</span>
+        <h3>Counselor-grade strategy</h3>
+        <p>Turns your profile and school list into a clear application strategy — where to apply, what to prioritize, and how to strengthen your chances.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">✍️</span>
+        <h3>Draft materials in seconds</h3>
+        <p>Generate personalized essay drafts, activity descriptions, and scholarship responses tailored to your profile and target schools.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">✨</span>
+        <h3>Polish your writing</h3>
+        <p>Refine essays with AI feedback, improve clarity and structure, and avoid common application mistakes.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">🔁</span>
+        <h3>Reuse across applications</h3>
+        <p>With just a tap, quickly reuse materials, activities, achievements, and profile information across schools.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">🗂️</span>
+        <h3>Stay organized</h3>
+        <p>Track schools, deadlines, essays, tasks, scholarships, and application progress in one clean workspace.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">📊</span>
+        <h3>Compare universities</h3>
+        <p>Explore admissions, rankings, costs, majors, financial aid, and student life across universities.</p>
+      </div>
+
+      <div class="feature-item">
+        <span class="icon">🧮</span>
+        <h3>Plan college costs</h3>
+        <p>Compare tuition, scholarships, aid, and affordability factors to better understand your options.</p>
+      </div>
+    </div>
+
+    <section class="card sources-card">
+      <h2>Built on trusted data</h2>
+      <p>Looquee combines official admissions data with AI guidance, drawing from sources including:</p>
+      <div class="sources-wrap">
+        <span class="source-pill">U.S. Dept. of Education / NCES / IPEDS</span>
+        <span class="source-pill">College Scorecard</span>
+        <span class="source-pill">Common Data Set</span>
+        <span class="source-pill">Official university admissions sites</span>
+        <span class="source-pill">U.S. Dept. of Labor / CareerOneStop</span>
+        <span class="source-pill">QS World University Rankings</span>
+        <span class="source-pill">Times Higher Education Rankings</span>
+        <span class="source-pill">U.S. News Rankings</span>
+        <span class="source-pill">ARWU / Shanghai Ranking</span>
+      </div>
+    </section>
+
+    <div class="section-heading">
+      <h2>Support</h2>
+      <p>Need help with your account, subscription, app features, or college planning tools? We're here.</p>
+    </div>
 
     <section class="card">
       <h2>Contact Support</h2>
 
       <p>
-        Need help with your account, subscription, app features,
-        or college planning tools? Email us and we’ll do our best to help.
+        Email us and we'll do our best to help.
       </p>
 
       <p>
@@ -169,7 +367,7 @@
     <div class="grid">
 
       <section class="card">
-        <h2>Subscriptions & Billing</h2>
+        <h2>Subscriptions &amp; Billing</h2>
 
         <p>
           Looquee may offer paid plans that unlock premium AI guidance,
@@ -192,7 +390,7 @@
       </section>
 
       <section class="card">
-        <h2>Privacy & Data</h2>
+        <h2>Privacy &amp; Data</h2>
 
         <p>
           Looquee uses your profile information to make college application guidance
@@ -243,9 +441,18 @@
       </p>
     </section>
 
+    <p class="disclaimer">
+      Looquee uses AI to support students through the college application process. It can help you brainstorm
+      ideas, organize your applications, explore information on 1,800+ U.S. colleges and 2,000+ scholarships, and
+      create reusable essay components to make your work more efficient. Looquee is designed to guide and assist,
+      not to replace your own effort. All AI-generated content should be reviewed, edited, and verified by you
+      before use. You remain responsible for the accuracy, originality, and submission of every application,
+      essay, and related material.
+    </p>
+
     <p class="footer">
-      © 2026 Looquee. Built to make college applications feel more manageable,
-      hopeful, and organized.
+      © 2026 Looquee. Built to make college applications feel more manageable, hopeful, and organized.
+      <span class="legal-links"><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Terms of Use (EULA)</a></span>
     </p>
 
   </main>
